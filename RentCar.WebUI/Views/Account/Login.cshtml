@@ -1,0 +1,35 @@
+@{
+    ViewBag.Title = "Login ke RentCar"; 
+    Layout = "_Layout";
+}
+
+@section Styles {
+    @* Gunakan tanda ~/ untuk memastikan path merujuk ke folder wwwroot *@
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+}
+
+<div class="login-container">
+    <div class="login-card">
+        <h2>Login ke RentCar</h2>
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="email" id="username" placeholder="Masukkan username Anda" required />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan password Anda" required />
+        </div>
+
+        <button type="button" id="btnLogin">Login</button>
+
+        <p class="register-link">
+            Belum punya akun? <a href="/Account/Register">Registrasi disini</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/auth.js" asp-append-version="true"></script>
+}

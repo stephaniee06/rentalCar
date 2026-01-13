@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Riwayat Penyewaan";
+}
+
+@section Styles {
+    @* Memanggil file CSS yang dipisah *@
+    <link rel="stylesheet" href="~/css/Riwayat.css" asp-append-version="true" />
+}
+
+<div class="header-riwayat">
+    <h5>Riwayat Penyewaan Mobil</h5>
+    <span>Hai, Stephanie Halim</span>
+</div>
+
+<div class="container-riwayat">
+    <h2 class="title-riwayat">Mobil yang Pernah Disewa</h2>
+    
+    <div class="card-table">
+        <table class="table-custom">
+            <thead>
+                <tr>
+                    <th>Tanggal Sewa</th>
+                    <th>Mobil</th>
+                    <th>Harga Sewa per Hari</th>
+                    <th>Total Hari</th>
+                    <th>Total Harga</th>
+                    <th>Status Pembayaran</th>
+                </tr>
+            </thead>
+            <tbody id="tableBodyRiwayat">
+                </tbody>
+        </table>
+    </div>
+    
+    <div class="back-link-container">
+        <a href="/" class="back-link">← Kembali ke Beranda</a>
+    </div>
+</div>
+
+@section Scripts {
+    @* Memanggil file JS yang dipisah *@
+    <script src="~/js/riwayat.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,68 @@
+body {
+    background: #f3e8ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 26px;
+    color: #6a4ca3;
+    margin-bottom: 10px;
+}
+
+.image-box {
+    width: 330px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.car-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-card {
+    width: 360px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.info-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    font-size: 15px;
+}
+
+td {
+    padding: 6px 0;
+}
+
+.btn-sewa {
+    width: 100%;
+    padding: 12px;
+    background: #c79df0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn-sewa:hover {
+    opacity: 0.85;
+}

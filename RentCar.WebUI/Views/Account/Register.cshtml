@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+
+ 
+
+@section Styles {
+    @* Gunakan tanda ~/ untuk memastikan path merujuk ke folder wwwroot *@
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+}
+
+<div class="login-page">
+    <div class="login-wrapper">
+        <div class="login-card">
+            <h1 class="title">Registrasi ke RentCar</h1>
+
+            <label class="lbl">Nama Lengkap</label>
+            <input id="fullname" class="input" type="text" placeholder="Masukkan nama lengkap Anda" required />
+
+            <label class="lbl">Email</label>
+            <input id="email" class="input" type="email" placeholder="Masukkan email Anda" required />
+
+            <label class="lbl">Password</label>
+            <input id="password" class="input" type="password" placeholder="Masukkan password Anda" required />
+
+            <label class="lbl">Re-Password</label>
+            <input id="repassword" class="input" type="password" placeholder="Masukkan kembali password Anda" required />
+
+            <label class="lbl">Nomor Telepon</label>
+            <input id="phone" class="input" type="tel" placeholder="Masukkan nomor telepon Anda" />
+
+            <label class="lbl">Alamat</label>
+            <textarea id="address" class="input" placeholder="Masukkan alamat Anda"></textarea>
+
+            <button id="btnRegister" type="button" class="btn-login">Registrasi</button>
+
+            <p class="register-line">
+                Sudah punya akun? <a href="/Account/Login">Login disini</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/auth.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,84 @@
+ 
+.rent-container {
+    text-align: center;
+    background-color: #f6e8f1;
+    padding: 40px 0;
+}
+
+ 
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #5a4b5c;
+}
+
+ 
+.carousel-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.car-image {
+    width: 380px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nav-btn {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    color: #444;
+}
+
+/* Card Informasi */
+.info-card {
+    background: white;
+    width: 360px;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    text-align: left;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.info-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.info-card td {
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.info-card td:first-child {
+    font-weight: 600;
+    width: 45%;
+}
+
+ 
+.btn-sewa {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #f7b6c9;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-sewa:hover {
+    background-color: #f08aad;
+}

@@ -1,0 +1,68 @@
+body {
+    background-color: #F3E5F5; /* Background ungu sangat muda */
+    margin: 0;
+}
+
+.header-riwayat {
+    background-color: #D1C4E9;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4A148C;
+    font-weight: bold;
+}
+
+.container-riwayat {
+    padding: 40px;
+    text-align: center;
+}
+
+.title-riwayat {
+    color: #4A148C;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-table {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-custom th {
+    text-align: left;
+    color: #666;
+    padding: 15px;
+    border-bottom: 2px solid #EEE;
+}
+
+.table-custom td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #EEE;
+}
+
+.status-lunas {
+    color: #27AE60;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #EB5757;
+    font-weight: bold;
+}
+
+.back-link {
+    color: #4A148C;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}

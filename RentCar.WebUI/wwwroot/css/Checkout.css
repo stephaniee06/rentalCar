@@ -1,0 +1,112 @@
+ 
+.checkout-container {
+    background-color: #f3e8ff;  
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ 
+.checkout-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;  
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+ 
+.title {
+    text-align: center;
+    color: #6d28d9;  
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+ 
+.car-img-large {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+ 
+.info-section h3 {
+    font-size: 18px;
+    color: #1f2937;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f3e8ff;
+    padding-bottom: 5px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f9fafb;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.info-row span:last-child {
+    font-weight: 500;
+    color: #111827;
+}
+
+ 
+.info-row.total {
+    border-top: 2px solid #f3e8ff;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-row.total span:last-child {
+    color: #000000;
+    font-size: 18px;
+}
+
+ 
+.btn-sewa-pink {
+    width: 100%;
+    background-color: #fbcfe8;  
+    color: #be185d;  
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s;
+}
+
+.btn-sewa-pink:hover {
+    background-color: #f9a8d4;  
+}
+
+ 
+.back-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.back-link a {
+    color: #6d28d9;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}

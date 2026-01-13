@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RentCar</title>
+    <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="close-btn" onclick="toggleNav()">&times;</span>
+        </div>
+        <div class="sidebar-content">
+            <a href="/">Home</a>
+            <a href="/Booking/Riwayat">Riwayat Penyewaan</a>
+            <a href="/Contact">Kontak Kami</a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="hamburger" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="/" class="navbar-brand">RentCar</a>
+            </div>
+
+           
+            <div class="nav-right auth-buttons-container" id="authSection">
+                <a href="/Account/Login" class="btn-login">Login</a>
+                <a href="/Account/Register" class="btn-register">Registrasi</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="overlay" class="overlay" onclick="toggleNav()"></div>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <script>
+        function toggleNav() {
+            var sidebar = document.getElementById("mySidebar");
+            var overlay = document.getElementById("overlay");
+            
+            if (sidebar.style.width === "300px") {
+                sidebar.style.width = "0";
+                overlay.style.display = "none";
+            } else {
+                sidebar.style.width = "300px";
+                overlay.style.display = "block";
+            }
+        }
+    </script>
+
+ 
+    <script src="~/js/auth.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,108 @@
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ 
+.login-page {
+    min-height: 100vh;
+    background-color: #f3e8ff; /* Ungu muda sesuai background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+ 
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ 
+.login-card {
+    width: 100%;
+    max-width: 520px;
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(107, 33, 168, 0.12);
+}
+
+ 
+.title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #5b4b8a;
+}
+
+ 
+.lbl {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5b4b8a;
+}
+ 
+.input,
+textarea.input {
+    width: 100%; /* Lebar penuh */
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.input:focus,
+textarea.input:focus {
+    border-color: #a855f7;
+}
+
+ 
+.btn-submit-register {
+    width: 100%;             
+    display: block;          
+    padding: 14px;
+    background-color: #fca5a5;  
+    color: #ffffff;          
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;      
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit-register:hover {
+    background-color: #fb7185;  
+}
+
+ 
+.register-line {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6b21a8;
+}
+
+.register-line a {
+    color: #6d28d9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-line a:hover {
+    text-decoration: underline;
+}

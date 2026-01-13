@@ -1,0 +1,156 @@
+ 
+body {
+    background: #f3eaff !important;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+ 
+.container,
+.container-fluid {
+    background: transparent !important;
+}
+
+ 
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: transparent !important;
+}
+
+ 
+.welcome-title {
+    text-align: center;
+    color: #4a1bb8;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+ 
+.filter-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    background: #bfe9ff !important;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+ 
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+ 
+.form-input,
+input[type="date"],
+select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    min-width: 160px;
+    background: #ffffff;
+}
+ 
+.btn-cari {
+    background: #f8b4c6;
+    color: #fff;
+    border: 2px solid #333;
+    padding: 10px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cari:hover {
+    background: #f48fb1;
+}
+
+ 
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+ 
+.car-card {
+    background: #bfe9ff;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-6px);
+}
+
+ 
+.car-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+ 
+.car-info {
+    text-align: center;
+}
+
+.car-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #8e68e6;
+    margin-bottom: 6px;
+}
+
+.car-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+ 
+.btn-sewa-home {
+    width: 100%;
+    background: #ffe082;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-sewa-home:hover {
+    background: #ffd54f;
+}
+
+ 
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-cari {
+        width: 100%;
+    }
+}

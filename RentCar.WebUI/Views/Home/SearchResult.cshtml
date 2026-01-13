@@ -1,0 +1,13 @@
+@foreach (var car in Model)
+{
+    <div class="car-card">
+        <img src="@car.ImageUrl" class="car-img"/>
+
+        <h3>@car.CarName</h3>
+        <p>Harga: Rp. @car.Price.ToString("N0") / hari</p>
+
+        <a href="/Rental/Summary?carId=@car.CarId" class="btn-sewa">
+            Sewa Sekarang
+        </a>
+    </div>
+}

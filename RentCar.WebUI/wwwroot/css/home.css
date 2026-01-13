@@ -1,0 +1,112 @@
+body {
+    background: #f7eaff;
+    font-family: Arial, sans-serif;
+}
+
+.homepage-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ 
+.search-box {
+    background: #cce6ff;
+    padding: 15px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.field label {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.field input,
+.field select {
+    width: 150px;
+    padding: 7px;
+    border: 1px solid #ffa9e9;
+    border-radius: 6px;
+}
+
+ 
+.search-btn {
+    background: #ff6fa5 !important;
+    color: white !important;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    background: #ff3d88;
+}
+
+ 
+.sorting-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.car-list {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    background: #cfe4ff;
+    width: 230px;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.car-card button {
+    background: #ffd7a3;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+ 
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.hidden {
+    display: none;
+}

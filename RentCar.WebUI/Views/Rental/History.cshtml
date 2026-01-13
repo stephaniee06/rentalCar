@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Riwayat Penyewaan";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/History.css" />
+}
+
+<div class="header-riwayat" style="background: #e1bee7; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+    <h5 style="color: #4a148c; font-weight: bold; margin: 0;">Riwayat Penyewaan Mobil</h5>
+    <span id="userNameHeader" style="color: #4a148c; font-weight: 500;">Hai, Stephanie Halim</span>
+</div>
+
+<div class="container mt-5">
+    <h3 class="text-center" style="color: #4a148c; font-weight: bold; margin-bottom: 30px;">Mobil yang Pernah Disewa</h3>
+    
+    <div class="card shadow-sm border-0 p-3" style="border-radius: 15px; background: white;">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead class="text-muted">
+                    <tr>
+                        <th>Tanggal Sewa</th>
+                        <th>Mobil</th>
+                        <th>Harga Sewa per Hari</th>
+                        <th>Total Hari</th>
+                        <th>Total Harga</th>
+                        <th>Status Pembayaran</th>
+                    </tr>
+                </thead>
+                <tbody id="tableRiwayat">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="text-center mt-4">
+        <a href="/" style="color: #4a148c; text-decoration: none; font-weight: bold;">← Kembali ke Beranda</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/riwayat.js"></script>
+}

@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/index.css" />
+}
+
+<div class="home-container">
+    <h1 class="welcome-title">Selamat Datang di Rental Mobil Kami</h1>
+
+    <div class="filter-container">
+        <div class="filter-group">
+            <label>Pickup Date:</label>
+            <input type="date" id="pickupDate" class="form-input">
+        </div>
+        <div class="filter-group">
+            <label>Return Date:</label>
+            <input type="date" id="returnDate" class="form-input">
+        </div>
+        <div class="filter-group">
+            <label>Filter Tahun:</label>
+            <select id="filterTahun" class="form-input">
+                <option value="">Semua Tahun</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+            </select>
+        </div>
+        <button type="button" id="btnCariMobil" class="btn-cari">Cari</button>
+    </div>
+
+    <div class="car-grid" id="carListDisplay">
+        </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/home.js"></script>
+}
